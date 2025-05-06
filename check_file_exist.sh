@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Demande à l'utilisateur un nom de fichier
-read -p "Nom du fichier: " fichier
+read -p "Entrez le nom du fichier : " fichier
 
 # Vérifie si le fichier existe
 if [ -f "$fichier" ]; then
