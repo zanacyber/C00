@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Hello, World\!"
-# Afficher "Hello, World!" dans le terminal
+# \! est utilisé pour échapper le caractère "!" dans la chaîne de caractères.
