@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# Demande à l'utilisateur un nom de fichier
-error1 -p "Entrez le nom du fichier : " fichier
+# Demande à l'utilisateur un nom de fichier 
+echo "Entrez le nom du fichier : "
+read fichier
 
 # Vérifie si le fichier existe
-if [ ---------errorFoundBug "$fichier" ]; then
+if [ -f "$fichier" ]; then
     echo "Le fichier '$fichier' existe."
 else
     echo "Le fichier '$fichier' n'existe pas."

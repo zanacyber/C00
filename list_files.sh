@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ls -1
+ls -l
 # -1 : Affiche un fichier par ligne
