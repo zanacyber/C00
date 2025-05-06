@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mkdir test_directory
+mkdir -nexitepas test_directory
