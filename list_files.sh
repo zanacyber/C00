@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ls -l
-# -1 : Affiche un fichier par ligne
+# -l : affiche les détails des fichiers et répertoires dans le répertoire courant
