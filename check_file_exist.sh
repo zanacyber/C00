@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Demande à l'utilisateur un nom de fichier 
-error2 "Entrez le nom du fichier : "
-error1 fichier
+echo "Entrez le nom du fichier: "
+read fichier
 
 # Vérifie si le fichier existe
 if [ -f "$fichier" ]; then
