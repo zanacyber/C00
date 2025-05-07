@@ -1,4 +1,4 @@
 #!/bin/bash
 
-error0 -l
+ls -la
 # -l : affiche les détails des fichiers et répertoires dans le répertoire courant
