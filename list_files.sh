@@ -1,4 +1,4 @@
 #!/bin/bash
 
-lss -la
+ls
 # -l : affiche les détails des fichiers et répertoires dans le répertoire courant
