@@ -2,7 +2,12 @@
 
 # Demande à l'utilisateur un nom de fichier 
 echo "Entrez le nom du fichier : "
-fichier=$(cat)
+read fichier
+
+# Vérifie si le nom de fichier est vide
+if [ -z "$fichier" ]; then
+    exit 1
+fi
 
 # Vérifie si le fichier existe
 if [-f $fichier]; then
