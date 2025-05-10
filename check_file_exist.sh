@@ -1,12 +1,26 @@
 #!/bin/bash
 
-# Demande à l'utilisateur un nom de fichier 
+# Demande le nom du fichier
 echo -n "Entrez le nom du fichier : "
 read fichier
 
-# Vérifie si le fichier existe
-if [ -f $fichier ]; then
-    echo "Le fichier '$fichier' existe."
-else
-    echo "Le fichier '$fichier' n'existe pas."
+# Vérifie si aucun nom n'a été entré
+if [ -z "$fichier" ]; then
+    echo "Erreur : aucun nom de fichier n'a été fourni."
+    exit 1
 fi
+
+# Vérifie si le fichier existe
+if [ ! -e "$fichier" ]; then
+    echo "Erreur : le fichier '$fichier' n'existe pas."
+    exit 1
+fi
+
+# Vérifie si c'est un fichier régulier
+if [ ! -f "$fichier" ]; then
+    echo "Le fichier '$fichier' existe."
+fi
+
+
+# Si tout est OK
+echo "Succès : le fichier '$fichier' existe."
