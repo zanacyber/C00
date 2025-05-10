@@ -12,7 +12,7 @@ fi
 
 # Vérifie si le fichier existe
 if [ ! -e "$fichier" ]; then
-    echo "Erreur : le fichier '$fichier' n'existe pas."
+    echo "Le fichier '$fichier' existe."
     exit 1
 fi
 
